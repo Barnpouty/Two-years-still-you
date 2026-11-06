@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7eee8">
+  <meta name="description" content="Two years, countless little moments, and one person I would choose again.">
+  <title>Two Years, Still You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="intro-screen" id="introScreen">
+    <div class="intro-spark intro-spark-a">✳</div>
+    <div class="intro-spark intro-spark-b">♡</div>
+    <div class="intro-card">
+      <span class="intro-overline">A LITTLE NOTE FOR YOU</span>
+      <div class="intro-seal">✦</div>
+      <p class="intro-script">Psst... Sharon.</p>
+      <h1 class="intro-title">For you,<br><em>Babygirl.</em></h1>
+      <p class="intro-copy">Two years of us, a few favourite memories, and a whole lot I want you to know.</p>
+      <button class="intro-button" id="openExperience">Open your little surprise <span>↗</span></button>
+      <span class="intro-footnote">MADE WITH LOVE · JUST FOR YOU</span>
+    </div>
+  </div>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Play Kiss of Life by Sade" title="Soundtrack: Kiss of Life — Sade">
+    <span class="music-icon">♫</span><span class="music-label">MUSIC OFF</span><span class="music-bars"><i></i><i></i><i></i></span>
+  </button>
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="{{ url_for('static', filename='audio/anniversary-song.mp3') }}" type="audio/mpeg">
+  </audio>
+
+  <nav class="nav">
+    <a class="wordmark" href="#top">for the two of us<span>✳</span></a>
+    <a class="nav-link" href="#memories">our little archive <span>↗</span></a>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE SOMETHING, JUST FOR YOU</p>
+        <h1>Two years.<br><em>Still you.</em></h1>
+        <p class="hero-intro">If I could put the feeling of having you in my life into a place, I think it would look a little like this.</p>
+        <p class="hero-aside">November 7, 2024 — the day our story became ours.</p>
+        <a class="round-link" href="#letter">Come a little closer <span>↓</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="sun-disc"></div>
+        <div class="hero-photo-wrap">
+          <img src="{{ url_for('static', filename='photos/memory-01.jpg') }}" alt="A favourite photo of us">
+          <span class="photo-note">my favourite kind of day</span>
+        </div>
+        <span class="scribble scribble-one">you + me</span>
+        <span class="scribble scribble-two">♡</span>
+        <div class="tiny-stamp">EST.<br>US</div>
+      </div>
+      <div class="hero-bottom"><span>01 / 04</span><span>MADE WITH LOVE, NOT A TEMPLATE</span><span>SCROLL TO FEEL IT ↓</span></div>
+    </section>
+
+    <section class="letter-section section-pad" id="letter">
+      <div class="section-kicker">01 — THE IMPORTANT PART</div>
+      <div class="letter-layout">
+        <div class="letter-heading">
+          <p class="handwritten">my love,</p>
+          <h2>There are things<br>I hope you <em>never</em><br>forget.</h2>
+        </div>
+        <div class="letter-body">
+          <p class="dropcap">When I think about how we began, I still find it beautiful that it started with something as simple as helping you find a place to stay outside the hostel. My brother already knew you from Mozambique, and somehow that introduction at university became the beginning of something I now hold so close to my heart.</p>
+          <p>My first impression of you? I genuinely thought you were the most beautiful creation of God. And as I got to know you, I realised it wasn't only your beauty that drew me in. It was the person behind it. From the very beginning, I could see myself wanting something real with you.</p>
+          <p>We've had our ups and downs, but we've kept building: through communication, understanding, patience, and choosing to put each other first. Thank you for being present. Thank you for checking whether I'm taking care of myself, for motivating me, and for reminding me to stay focused on the goals God has placed in my heart. I admire your resilience — the way you keep going for what matters to you.</p>
+          <p>You've helped me understand that love is not just about how we feel in the beautiful moments. It's also about how we listen, how we make peace, how we learn, and how we remember what we mean to each other when a difficult moment tries to distract us.</p>
+          <p class="signoff">I would choose you again.<br><span>and again, and again.</span></p>
+        </div>
+      </div>
+      <div class="margin-heart">♡</div>
+    </section>
+
+    <section class="story-section section-pad" id="our-story">
+      <div class="section-kicker">A FEW MOMENTS THAT ARE OURS</div>
+      <div class="story-heading">
+        <h2>Some beginnings<br>stay with you. <em>Ours did.</em></h2>
+        <p>Not every important moment is loud. Some become special simply because they changed the direction of your life.</p>
+      </div>
+      <div class="story-list">
+        <article class="story-entry">
+          <span class="story-index">01</span>
+          <div><span class="story-label">THE FIRST CHAPTER</span><h3>A university introduction</h3>
+          <p>My brother already knew you from Mozambique. I was living outside the hostel, you needed a place too, and I helped you out. I had no idea that a simple introduction and a practical favour would become the start of us.</p></div>
+        </article>
+        <article class="story-entry story-entry-offset">
+          <span class="story-index">02</span>
+          <div><span class="story-label">A LITTLE COURAGE (AND A NO)</span><h3>That first almost-kiss</h3>
+          <p>I made the first move. I tried to kiss you, and you turned me down. I can laugh about it now — especially because you eventually said yes. Maybe the story needed a little suspense.</p></div>
+        </article>
+        <article class="story-entry">
+          <span class="story-index">03</span>
+          <div><span class="story-label">THE DAY WE MADE IT OFFICIAL</span><h3>When you became my girl</h3>
+          <p>Our first date and the day I asked you to be my girlfriend are two moments I keep close. They are part of the beginning of a relationship that has become one of the most meaningful parts of my life.</p></div>
+        </article>
+        <article class="story-entry story-entry-offset">
+          <span class="story-index">04</span>
+          <div><span class="story-label">A REMINDER OF WHAT MATTERS</span><h3>Choosing us, even after a disagreement</h3>
+          <p>On New Year's Eve, we had a little argument. But later, we made peace and remembered what we meant to each other instead of letting the problem become bigger than the relationship. I remember that because it showed me something about us: we can choose understanding.</p></div>
+        </article>
+      </div>
+      <p class="story-endnote">And those are only a few pages. We still have so much story ahead of us.</p>
+    </section>
+
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>Some people make life feel a little more like<br><em>where you're supposed to be.</em></p>
+      <span class="quote-credit">YOU HAVE THAT EFFECT ON ME.</span>
+      <span class="orbit orbit-a"></span><span class="orbit orbit-b"></span>
+    </section>
+
+    <section class="appreciation section-pad">
+      <div class="section-kicker">02 — THINGS I NOTICE</div>
+      <div class="appreciation-top">
+        <h2>Not just what<br>you do. <em>Who you are.</em></h2>
+        <p>Love lives in the details. Here are a few things I never want to take for granted.</p>
+      </div>
+      <div class="notes-grid">
+        <article class="note note-peach"><span class="note-number">01</span><span class="note-icon">✳</span><h3>Your presence</h3><p>You show up. Your presence has a way of making me feel supported, and I never want to take that for granted.</p></article>
+        <article class="note note-lilac"><span class="note-number">02</span><span class="note-icon">☼</span><h3>Your encouragement</h3><p>You ask if I'm taking care of myself, motivate me, and remind me why my goals matter. I hear you, even when I don't say it enough.</p></article>
+        <article class="note note-yellow"><span class="note-number">03</span><span class="note-icon">♡</span><h3>Your resilience</h3><p>I admire how you keep pursuing what you want and what you need. Your determination inspires me.</p></article>
+        <article class="note note-green"><span class="note-number">04</span><span class="note-icon">〰</span><h3>Your faith</h3><p>You remind me to keep God at the centre of everything — especially our relationship. That means more to me than I can explain.</p></article>
+      </div>
+    </section>
+
+    <section class="memories-section section-pad" id="memories">
+      <div class="section-kicker">03 — THE LITTLE ARCHIVE</div>
+      <div class="memories-heading">
+        <div><h2>Proof that the<br>best things are <em>shared.</em></h2></div>
+        <p>A few frames from our story. Tap any photo to see it a little closer.</p>
+      </div>
+      <div class="gallery">
+        {% for i in range(1, photo_count + 1) %}
+          <button class="gallery-item gallery-item-{{ ((i - 1) % 6) + 1 }}" data-full="{{ url_for('static', filename='photos/memory-%02d.jpg' % i) }}" aria-label="Open memory {{ i }}">
+            <img loading="lazy" src="{{ url_for('static', filename='photos/memory-%02d.jpg' % i) }}" alt="A memory of us, photo {{ i }}">
+            <span class="gallery-zoom">↗</span>
+          </button>
+        {% endfor %}
+      </div>
+      <p class="gallery-footnote">A small collection of moments I get to keep.</p>
+    </section>
+
+    <section class="promise-section">
+      <div class="promise-inner">
+        <span class="promise-star">✳</span>
+        <p class="section-kicker">04 — AND WHAT COMES NEXT</p>
+        <h2>Here's to more<br><em>life, with you in it.</em></h2>
+        <p class="promise-copy">More growing. More laughing until we can't breathe. More figuring things out, showing up for each other, and keeping God at the centre of what we build. I want you to know that I see this relationship as something to protect and nurture for the long run. And if it is God's will, I hope one day I get to call you my wife. Until then, I want to keep becoming someone who loves you well — through my words, my choices, and the life I'm working to build.</p>
+        <button class="final-button" id="surpriseButton">One last thing… <span>♡</span></button>
+        <div class="surprise-message" id="surpriseMessage" aria-live="polite">
+          <p>Ever since God brought you into my life, I've felt that my life has a deeper direction: to love you well, take care of you, and build a future with intention.</p>
+          <span>Happy two years, my love. If God wills it, this is only the beginning.</span>
+        </div>
+      </div>
+      <div class="footer-line"><span>MADE FOR YOU, WITH ALL MY HEART</span><span>∞</span><span>THE STORY CONTINUES</span></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous photo">‹</button>
+    <img id="lightboxImage" src="" alt="Expanded memory">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next photo">›</button>
+    <span class="lightbox-caption">one of my favourite memories</span>
+  </div>
+  <script>window.PHOTO_COUNT = {{ photo_count }};</script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

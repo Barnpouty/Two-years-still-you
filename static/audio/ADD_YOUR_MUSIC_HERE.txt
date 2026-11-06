@@ -1,0 +1,3 @@
+Add the MP3 song you want to use as background music to this folder and name it exactly: anniversary-song.mp3
+The website starts music only after she presses the opening button, because browsers block autoplay before a user interaction.
+Use a song you have the right to use. You can replace it at any time.
